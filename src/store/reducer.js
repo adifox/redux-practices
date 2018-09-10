@@ -12,7 +12,7 @@ const reducer = (state = initialState, action) => {
     return {
       ...state,
       counter: 0,
-      tomato: 5
+      tomato: 0
     }
   }
   return state;

@@ -18,8 +18,8 @@ class calculator extends Component {
         <h2>{ result }</h2>
         <h3>There are { tomato } tomatoes</h3>
         <Buttons 
-          onclickHandler={ (x) => this.props.incrementTomato(x) }
-          onResetHandler={ () => this.props.resetTomato() }
+          onclickHandler={ (x) => this.props.increment(x) }
+          onResetHandler={ () => this.props.resetCounter() }
         />
       </div>
     )
@@ -35,8 +35,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    incrementTomato: (x) => dispatch(actions.increment(x)),
-    resetTomato: () => dispatch(actions.reset())
+    increment: (x) => dispatch(actions.increment(x)),
+    resetCounter: () => dispatch(actions.resetCounter())
   }
 }
 

@@ -7,7 +7,7 @@ export const increment = (value) => {
   }
 }
 
-export const reset = () => {
+export const resetCounter = () => {
   return {
     type: actionTypes.RESET,
   }
